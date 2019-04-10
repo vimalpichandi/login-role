@@ -1,0 +1,65 @@
+http://192.168.6.25:8080/rc7/api/authsession
+
+Argument
+{
+  "password": "Demo@123",
+  "username": "cc_mcare@ripplecare.com"
+}
+
+Output
+{
+  "operationStatus" : "SUCCESS",
+  "operationMessage" : "Login Success",
+  "item" : {
+    "token" : "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ5MjIyNzEsInN1YiI6IkpvaG5QZXRlcnNvbiIsInVzZXJJZCI6ImNjX21jYXJlQHJpcHBsZWNhcmUuY29tIiwicm9sZSI6IlBSQUNUSUNFIiwicHdkIjoiYmdJSzNRREJuTVdQSlBsR0RsUEFSQT09In0.buspZyHi6pakixlL5Gziw_Oil_l7oRLRg25zajxBuPM",
+    "userId" : "cc_mcare@ripplecare.com",
+
+    "userAccountId" : 3744742,
+    "firstName" : "John",
+    "lastName" : "Peterson",
+    "email" : "cc_mcare@ripplecare.com",
+    "appRoles" : "PRACTICE",
+    "clientlogopath" : null,
+    "userimagepath" : "/dam/common/default_cc.jpg",
+    "userAccountKey" : 110241,
+
+    "onBehalf" : false,
+    "carePartnerPatientName" : "",
+    "isdelete" : false
+  }
+}
+
+
+
+Admin
+------
+
+{
+  "password": "Demo@123",
+  "username": "seadmin@solvedge.com"
+}
+
+Output
+------
+
+{
+  "operationStatus" : "SUCCESS",
+  "operationMessage" : "Login Success",
+  "item" : {
+    "token" : "eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NTQ5MjIzMzMsInN1YiI6IlNlYWRtaW5Tb2x2ZWRnZSIsInVzZXJJZCI6InNlYWRtaW5Ac29sdmVkZ2UuY29tIiwicm9sZSI6IlNPTFZFREdFIiwicHdkIjoiYmdJSzNRREJuTVdQSlBsR0RsUEFSQT09In0.L4VO0VOlzJbjjCvKYjACYCklPLDdvPuWu1kizH2rnmA",
+    "userId" : "seadmin@solvedge.com",
+
+    "userAccountId" : 1,
+    "firstName" : "Seadmin",
+    "lastName" : "Solvedge",
+    "email" : "seadmin@solvedge.com",
+    "appRoles" : "SOLVEDGE",
+    "clientlogopath" : null,
+    "userimagepath" : "/dam/common/default_cc.jpg",
+    "userAccountKey" : null,
+
+    "onBehalf" : false,
+    "carePartnerPatientName" : "",
+    "isdelete" : false
+  }
+}
