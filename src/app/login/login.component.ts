@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     this.authService.logout();
   }
   get form() { return this.loginForm.controls; }
-  login() { 
+  login() {  
     if (this.loginForm.invalid) {
         return;
     }
@@ -38,16 +38,17 @@ export class LoginComponent implements OnInit {
     if(this.form.username.value == this.adminmodel.username && this.form.password.value == this.adminmodel.password){
       alert("admin");
         console.log("admin successful"); 
-        localStorage.setItem('isLoggedIn', "true");
+        localStorage.setItem('Keylogin', "true");
         localStorage.setItem('token', this.form.username.value);
         this.router.navigate(['adminpage']);
       } else
       if(this.form.username.value == this.usermodel.username && this.form.password.value == this.usermodel.password){
         alert("user");
         console.log("user successful"); 
-        localStorage.setItem('isLoggedIn', "true");
+        localStorage.setItem('Keylogin', "true");
         localStorage.setItem('token', this.form.username.value);
         this.router.navigate(['userpage']);
+        
       }
       else{
         this.message = "Please check your username and password";
